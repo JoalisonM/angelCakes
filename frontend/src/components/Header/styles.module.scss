@@ -1,0 +1,59 @@
+.headerContainer {
+  height: 5.5rem;
+}
+
+.headerContent {
+  max-width: 1200px;
+  height: 5.5rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+
+  nav {
+    height: 5.5rem;
+    margin-left: 16rem;
+
+    display: flex;
+    align-items: center;
+
+    a {
+      cursor: pointer;
+      color: var(--white);
+      background: var(--blue-300);
+      padding: 0.7rem 0.6rem;
+      border-radius: 6px;
+
+      transition: filter 0.2s;
+    }
+
+    a:hover {
+      filter: brightness(0.9)
+    }
+
+    button {
+      border: 0;
+      font-weight: 600;
+      background: transparent;
+      margin-left: 2rem;
+
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+
+      background: linear-gradient(to right, var(--blue-500), var(--blue-500) 50%, var(--blue-300) 50%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 200% 100%;
+      background-position: 100%;
+
+      transition: background-position 275ms ease;
+    }
+
+    button:hover {
+      background-position: 0 100%;
+    }
+  }
+}

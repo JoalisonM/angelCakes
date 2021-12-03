@@ -1,0 +1,52 @@
+.cakeContainer {
+  max-width: 1200px;
+  padding: 0 2rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+  margin-bottom: 7rem;
+
+  display: flex;
+
+  img {
+    width: 550px;
+    height: 644px;
+  }
+}
+
+.cakeContent {
+  margin-left: 5rem;
+
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    margin-top: 2rem;
+    font-size: 4rem;
+    text-align: center;
+
+    span {
+      font-size: 4.5rem;
+      color: var(--blue-500);
+    }
+  }
+
+  p {
+    margin-top: 2rem;
+    text-align: justify;
+    line-height: 2rem;
+
+    & + p {
+      margin: 1rem 0 2rem;
+    }
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      width: 210px;
+      height: 88px;
+    }
+  }
+}
